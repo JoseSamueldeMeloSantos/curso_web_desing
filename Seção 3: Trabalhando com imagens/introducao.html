@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Trabalhando com imagens</title>
+
+        <style>
+            body {
+                /* background-color: blue; */
+                font-family: 22px;
+                font-family: sans-serif;
+                width: 700px;
+                margin: auto;
+
+                background-image: url("imagens/bg.jpg");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+                background-position: right bottom;
+            }
+
+            p {
+                line-height: 1.5;
+                text-align: justify;
+            }
+
+            .img-logo {
+                width: 400px;
+            }
+
+            .img-html {
+                float: left;
+            }
+
+            .img-css {
+                float: right;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Trabalhando com imagens</h1>
+
+        <h2>Imagens vetoriais vs bitmap</h2>
+        <!-- pode-se colocar uma img da internet tbm utilizando a url do site-->
+        <img class="img-logo" src="imagens/logo_ser-frontend-ico.png" alt="logotipo serfrontend">
+        <br><!-- na vida real não utilizamos o br para separar imagens -->
+        <img class="img-logo" src="imagens/logo_ser-frontend-ico.svg" alt="logotipo serfrontend">
+    
+        <h2>Imagens transparentes</h2>
+
+        <img src="imagens/logo_ser-frontend-ico-transparente.gif" alt="">
+        <br>
+        <img src="imagens/logo_ser-frontend-ico-transparente.png" alt="">
+
+
+        <h2>Gif animado</h2>
+
+        <img src="imagens/walk.gif" alt="animação mulher andando">
+
+        <h2>Float</h2>
+
+        <img class="img-html" src="imagens/html5.png" alt="logotipo html5">
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, doloremque?
+        Accusantium expedita, saepe libero neque nisi soluta facere ipsa et dolor perferendis
+        fuga voluptas modi veniam, id labore cumque natus.</p>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo nostrum odio nisi dicta
+        in doloremque nesciunt atque, cum voluptatibus eos, exercitationem modi aliquid. Dicta nesciunt
+        accusantium, deserunt voluptates esse corporis laudantium, maxime magnam animi, tempora rem ab fugit
+        facilis! Iusto quisquam doloremque beatae, id voluptate sed quaerat qui doloribus dolorem et nesciunt,
+        laudantium quasi fuga ipsa, quidem quae repellendus! Inventore debitis amet reprehenderit voluptas,
+        officia voluptatum incidunt neque! Officiis cupiditate dolores quaerat labore totam quibusdam porro natus
+        consequuntur assumenda corporis!</p>
+
+        <img class="img-css" src="imagens/css3.png" alt="logotipo css3">
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, doloremque?
+            Accusantium expedita, saepe libero neque nisi soluta facere ipsa et dolor perferendis
+            fuga voluptas modi veniam, id labore cumque natus.</p>
+    
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo nostrum odio nisi dicta
+        in doloremque nesciunt atque, cum voluptatibus eos, exercitationem modi aliquid. Dicta nesciunt
+        accusantium, deserunt voluptates esse corporis laudantium, maxime magnam animi, tempora rem ab fugit
+        facilis! Iusto quisquam doloremque beatae, id voluptate sed quaerat qui doloribus dolorem et nesciunt,
+        laudantium quasi fuga ipsa, quidem quae repellendus! Inventore debitis amet reprehenderit voluptas,
+        officia voluptatum incidunt neque! Officiis cupiditate dolores quaerat labore totam quibusdam porro natus
+        consequuntur assumenda corporis!</p>
+    </body>
+</html>

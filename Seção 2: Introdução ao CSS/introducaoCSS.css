@@ -5,22 +5,22 @@ body {
 
 h1 {
     color: red;
-    /*   define a fonte(a vidrgula define a ordem de preferência
+    /*   define a fonte(a virgula define a ordem de preferência
     da fonte que será mostrada.se não tiver a arial instalada
-    no computador do úsuario ele vai colocar a helvetica e assim por
+    no computador do usuário ele vai colocar a helvetica e assim por
     diante)*/
     font-family: Arial, Helvetica, sans-serif;
     /*define o tamanho da fonte(por enquanto o tamanho ser´a em definido
-    em px(pxiel))*/
+    em px(pixel))*/
     font-size: 70px;
 }
 
 h2 {
     font-size: 38px;
     font-family: Arial, Helvetica, sans-serif;
-    /*Normalmente só é usado para definir se um terxto
-    será em italico(As outras obções não acressenta uma 
-    mudança perserpitivel)*/
+    /*Normalmente só é usado para definir se um texto
+    será em itálico(As outras opções não acrescenta uma 
+    mudança perceptível)*/
     font-style: italic;
     font-weight: normal;
 }
@@ -29,14 +29,14 @@ h3 {
     font-size: 28px;
     /*define a formatação do texto para 
     maiúsculo(uppercase), minúsculo(lowercase) ou
-    com a primeria letra em maiúsculo e o resto
-    em minúsculo(captalize)*/
+    com a primeira letra em maiúsculo e o resto
+    em minúsculo(capitalize)*/
     text-transform: capitalize;
     /*alinha o posicionamento do texto para a 
     esquerda(left), direita(right), centro(center) ou para ocupar
-    ocupar toda a área do navegador(justify).normamente a gente
+    ocupar toda a área do navegador(justify).normalmente a gente
     não utiliza o justify para não prejudica a legibilidade do
-    conteudo
+    conteúdo
     */
     text-align: center;
     text-decoration: underline;
@@ -52,8 +52,8 @@ p {
     text-indent: 58px;
     color: #620686;
     /*vai colocar todas a letras em maiúsculo,porém as letras que estão
-    em maiúsculo no html vão ficar maior maior do que as outras(um super maiúscilo).
-    o outro valor para essa propriedade é o nomal,porém esse é o padão do html*/
+    em maiúsculo no html vão ficar maior maior do que as outras(um super maiúsculo).
+    o outro valor para essa propriedade é o normal,porém esse é o padrão do html*/
     font-variant: small-caps;
     /*coloca uma texto em negrito(bold) ou remove(normal)*/
     font-weight: bold;
