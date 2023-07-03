@@ -1,0 +1,96 @@
+body {
+    /* o css coloca essa aspas no Segoe UI pq o nome da fonte tem um espaço no meio*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #bfac8b;
+    width: 90%;
+    margin: auto;
+    /*text-aling vs margin
+    margin -> centraliza o bloco
+    text-aling -> centraliza o conteúdo dentro do bloco*/
+}
+
+h1 {
+    background-color: #134647;
+    color: #000706;
+    text-align: center;
+    padding: 6px;
+    margin-bottom: 0;
+}
+
+h2 {
+    background-color: #0c7e7e;
+    color: #000706;
+    /*se vc omitir a cor da borda ele vai colocar a cor do texto como padrão */
+    border-bottom: 3px solid #000706;
+    padding: 3px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+h3 {
+    font-size: 15px;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+p {
+    font-size: 13px;
+}
+
+ul {
+    /* por padrão a ul tem um padding*/
+    padding-left: 0px;
+}
+
+ul li {
+
+    list-style-position: inside;
+    font-size: 13px
+}
+
+a {
+    color: #134647;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.minhasInformacoes {
+    text-align: center;
+    margin-top: 0;
+    background-color: #195e5f;
+}
+
+.menu {
+    text-align: right;
+}
+
+.menu li {
+    list-style: none outside;
+    /* para remover totalmente a área do li e deixar somente a
+    área da tag <a>
+    (faça sempre isso quando for criar um menu com lista) */
+    padding: 0; 
+    /* e depois coloque isso caso queira um menu na vertical */
+    display: inline-block;
+}
+
+.menu a {
+    font-size: 17px;
+    padding: 4px;
+    background-color: #134647;
+    color: #000706;
+    /* se quiser deixar block não vai ter problema, pois
+    o .menu li já está como inline-block*/
+    display: inline-block;
+}
+
+.menu a:hover {
+    background-color: #000706;
+    color: #134647;
+    text-decoration: none;
+}

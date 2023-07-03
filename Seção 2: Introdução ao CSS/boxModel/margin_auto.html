@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Margin Auto</title>
+        <meta charset="utf-8">
+
+        <style>
+            body {
+                font-family: sans-serif;
+                background-color: #ccc;
+            }
+
+            h1 {
+                background-color: yellow;
+                /* vai colocar uma barrra de rolagem,
+                pois a tamanho já é 100% da pagina *
+                margin: 50px;
+                width: 100%;*/
+                /* vai aparecer centralizado, poís sobra 25% em cada lado
+                da pagina(se mudar o valor não da mais certo)
+                width: 50%;
+                margin-left: 25%;*/
+
+                /* vai sempre ficar centralizado independente do valor
+                do width por causa do auto*/
+                width: 50%;
+                /* o auto coloca o espaço que sobra da página*/
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                /*para centralizar com o auto é necessário sempre definir
+                um width, e se quiser centralizar na vertical é necessário
+                definir um height*/
+            }
+            
+            p {
+                width: 80%; 
+                margin: auto;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Margin Auto</h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Sapiente minima odit a voluptatem eum minus enim quo cum,
+        voluptatibus dolor beatae vitae. Sint quibusdam ut consequatur
+        doloribus. Esse dolorum quos distinctio praesentium atque mollitia
+        laudantium sunt dolor, consequatur quidem quia provident consequuntur
+        voluptates sed illum iste molestias minus omnis assumenda! Dolorum vel,
+        laboriosam facilis, quasi harum accusantium quod laudantium illum itaque 
+        quas dolorem iste odio dicta doloremque molestias eaque ea. Nobis sequi 
+        quos ipsa ducimus laboriosam. Doloremque sequi tempore veritatis rerum sunt, 
+        ut quasi mollitia eveniet ratione, architecto dolores reprehenderit beatae vitae 
+        odit voluptas laudantium non rem error exercitationem. Veritatis.</p>
+    </body>
+</html>

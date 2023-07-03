@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Margin Auto</title>
+        <meta charset="utf-8">
+
+        <style>
+            body {
+                font-family: sans-serif;
+            }
+
+            p {
+                width: 500px;
+                background-color:  #ccc;
+            }
+
+            .p1 {
+                padding: 25px;
+            }
+
+            .p2 {
+                padding: 25px;
+                border: 10px solid green;
+            }
+
+            .p3 {
+                padding: 25px;
+                border: 10px solid green;
+                /* comportamento padrão */
+                /* box-sizing: content-box; */
+                box-sizing: border-box;
+                /*quando eu coloco border-box ele mantém o width/height mesmo
+                após eu colocar o padding e o border*/
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Box Sizing</h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Sapiente minima odit a voluptatem eum minus enim quo cum,
+        voluptatibus dolor beatae vitae. Sint quibusdam ut consequatur
+        doloribus. Esse dolorum quos distinctio praesentium atque mollitia
+        laudantium sunt dolor, consequatur quidem quia provident consequuntur
+        voluptates sed illum iste molestias minus omnis assumenda! Dolorum vel,
+        laboriosam facilis, quasi harum accusantium quod laudantium illum itaque 
+        quas dolorem iste odio dicta doloremque molestias eaque ea. Nobis sequi 
+        quos ipsa ducimus laboriosam. Doloremque sequi tempore veritatis rerum sunt, 
+        ut quasi mollitia eveniet ratione, architecto dolores reprehenderit beatae vitae 
+        odit voluptas laudantium non rem error exercitationem. Veritatis.</p>
+
+        <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Sapiente minima odit a voluptatem eum minus enim quo cum,
+        voluptatibus dolor beatae vitae. Sint quibusdam ut consequatur
+        doloribus. Esse dolorum quos distinctio praesentium atque mollitia
+        laudantium sunt dolor, consequatur quidem quia provident consequuntur
+        voluptates sed illum iste molestias minus omnis assumenda! Dolorum vel,
+        laboriosam facilis, quasi harum accusantium quod laudantium illum itaque 
+        quas dolorem iste odio dicta doloremque molestias eaque ea. Nobis sequi 
+        quos ipsa ducimus laboriosam. Doloremque sequi tempore veritatis rerum sunt, 
+        ut quasi mollitia eveniet ratione, architecto dolores reprehenderit beatae vitae 
+        odit voluptas laudantium non rem error exercitationem. Veritatis.</p>
+        
+        <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Sapiente minima odit a voluptatem eum minus enim quo cum,
+        voluptatibus dolor beatae vitae. Sint quibusdam ut consequatur
+        doloribus. Esse dolorum quos distinctio praesentium atque mollitia
+        laudantium sunt dolor, consequatur quidem quia provident consequuntur
+        voluptates sed illum iste molestias minus omnis assumenda! Dolorum vel,
+        laboriosam facilis, quasi harum accusantium quod laudantium illum itaque 
+        quas dolorem iste odio dicta doloremque molestias eaque ea. Nobis sequi 
+        quos ipsa ducimus laboriosam. Doloremque sequi tempore veritatis rerum sunt, 
+        ut quasi mollitia eveniet ratione, architecto dolores reprehenderit beatae vitae 
+        odit voluptas laudantium non rem error exercitationem. Veritatis.</p>
+        
+        <p class="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Sapiente minima odit a voluptatem eum minus enim quo cum,
+        voluptatibus dolor beatae vitae. Sint quibusdam ut consequatur
+        doloribus. Esse dolorum quos distinctio praesentium atque mollitia
+        laudantium sunt dolor, consequatur quidem quia provident consequuntur
+        voluptates sed illum iste molestias minus omnis assumenda! Dolorum vel,
+        laboriosam facilis, quasi harum accusantium quod laudantium illum itaque 
+        quas dolorem iste odio dicta doloremque molestias eaque ea. Nobis sequi 
+        quos ipsa ducimus laboriosam. Doloremque sequi tempore veritatis rerum sunt, 
+        ut quasi mollitia eveniet ratione, architecto dolores reprehenderit beatae vitae 
+        odit voluptas laudantium non rem error exercitationem. Veritatis.</p>
+    </body>
+</html>

@@ -1,0 +1,98 @@
+/*muda a cor de toda a página, poís o body é o corpo da pagina*/
+body {
+    background-color: #ccc;
+}
+
+h1 {
+    color: red;
+    /*   define a fonte(a vidrgula define a ordem de preferência
+    da fonte que será mostrada.se não tiver a arial instalada
+    no computador do úsuario ele vai colocar a helvetica e assim por
+    diante)*/
+    font-family: Arial, Helvetica, sans-serif;
+    /*define o tamanho da fonte(por enquanto o tamanho ser´a em definido
+    em px(pxiel))*/
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 38px;
+    font-family: Arial, Helvetica, sans-serif;
+    /*Normalmente só é usado para definir se um terxto
+    será em italico(As outras obções não acressenta uma 
+    mudança perserpitivel)*/
+    font-style: italic;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 28px;
+    /*define a formatação do texto para 
+    maiúsculo(uppercase), minúsculo(lowercase) ou
+    com a primeria letra em maiúsculo e o resto
+    em minúsculo(captalize)*/
+    text-transform: capitalize;
+    /*alinha o posicionamento do texto para a 
+    esquerda(left), direita(right), centro(center) ou para ocupar
+    ocupar toda a área do navegador(justify).normamente a gente
+    não utiliza o justify para não prejudica a legibilidade do
+    conteudo
+    */
+    text-align: center;
+    text-decoration: underline;
+    /*vai mudar a cor de fundo de uma tag*/
+    background-color: cyan;
+}
+
+p {
+    font-size: 22px;
+    text-align: left;
+    /*define o espaço,em px(pixel),que terá a primeira linha do 
+    texto em relação a margem.a famosa identação*/
+    text-indent: 58px;
+    color: #620686;
+    /*vai colocar todas a letras em maiúsculo,porém as letras que estão
+    em maiúsculo no html vão ficar maior maior do que as outras(um super maiúscilo).
+    o outro valor para essa propriedade é o nomal,porém esse é o padão do html*/
+    font-variant: small-caps;
+    /*coloca uma texto em negrito(bold) ou remove(normal)*/
+    font-weight: bold;
+}
+
+a {
+    color: forestgreen;
+    /*serve para colocar uma linha em baixo do to texto(underline),
+    em cima do texto(overline), no meio do texto(line-through) ou
+    sem nada(nome)*/
+    text-decoration: none;
+    /*o valor nome é muito usado para tirar o uderline da tag a*/
+    
+    /*como o <a> está dentro do <p>,ela vai herdar todas as propriedades
+    do p.
+    para  o remover só é voltar a propriedade ao normal*/
+    font-variant: normal;
+}
+
+/*um seletor que começa com ponto sempre é uma classe*/
+.destaque {
+    /*todas as tags que possuem a classe destaque vai ser mudada
+    para isso*/
+    color: brown;
+    font-weight: bold;
+    font-variant: normal;
+}
+
+/*um seletor que começa com # sempre é um id*/
+#titulo {
+    /*qualquer tag que possui  o id titulo vai ser mudada
+    para isso*/
+    color: darkgoldenrod;
+}
+
+/*tanto a classe quanto o id irão herdar as propriedades de sua tag(caso ela
+tenha sido alterada no css tbm.como é o caso)*/
+
+/*por em quanto prefira usar a classe*/
+
+/*ter dois id iguais em um mesmo arquivo html é conceitualmente errado*/
+

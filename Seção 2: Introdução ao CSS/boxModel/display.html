@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Margin Auto</title>
+        <meta charset="utf-8">
+
+        <style>
+            body {
+                font-family: sans-serif;
+            }
+
+            p {
+                width: 70%;
+                background-color:  #ccc;
+            }
+
+            h1 {
+                border: 2px solid red;
+            }
+
+            a {
+                background-color: yellow;
+                width: 200px;
+            }
+
+            strong {
+                padding: 25px;
+                background-color: #bd7070;
+                display: inline-block;
+                height: 60px;
+                width: 50%;
+            }
+
+            b {
+                /*remove o elemento e a área ocupada por ele*/
+                /* display: none; */
+                /*remove o elemento e mantém área ocupada por ele*/
+                visibility: hidden;
+                /* mantém visível(padrão) */
+                /* visibility: visible; */
+            }
+        </style>
+    </head>
+    <!--Nunca utilize propriedades de boxModel em elementos inline-->
+    <body>
+        <h1>Box Sizing</h1>
+
+        <p>Lorem ipsum dolor <a href="box_sizing.html">Box Sizing arquivo html</a> 
+        amet consectetur <b>texto em negrito com &lt;b&gt;</b> adipisicing elit.Sapiente
+        minima odit a <strong>texto tem negrito com &lt;strong&gt;</strong> eum minusenim 
+        quo cum, voluptatibus dolor <em>texto em italico com &lt;em&gt;</em>beatae vitae.
+        Sint quibusdam ut consequatur doloribus.Esse dolorum quos distinctio praesentium 
+        <i>texto em italico com &lt;i&gt; </i> atque mollitia</p>
+    </body>
+</html>
