@@ -5,7 +5,7 @@ body {
 
 h1 {
     color: red;
-    /*   define a fonte(a virgula define a ordem de preferência
+    /* define a fonte(a virgula define a ordem de preferência
     da fonte que será mostrada.se não tiver a arial instalada
     no computador do usuário ele vai colocar a helvetica e assim por
     diante)*/

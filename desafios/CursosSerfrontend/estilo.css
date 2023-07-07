@@ -1,0 +1,107 @@
+body {
+    /* vai tirar o margin do topo da página */
+    margin: -16px 0;
+    font-family: sans-serif;
+    background-color: gainsboro;
+}
+
+header {
+    background-image: url(imagens/bg-4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+    margin-bottom: 15px;
+}
+
+nav {
+    text-align: right;
+    margin-right: 40px;
+}
+
+li {
+    display: inline-block;
+    padding: 0;
+    margin-top: 35px;
+    margin-right: 5px;
+}
+
+li a {
+    padding: 10px;
+    border: 2px solid azure;
+    background-color: black;
+    opacity: 0.4;
+    text-decoration: none;
+    color: azure;
+}
+
+
+li a:hover {
+    border-color: black;
+    color: black;
+    background-color: azure;
+}
+
+.titulo-principal {
+    text-align: center;
+    margin-top: 170px;
+    font-size: 60px;
+    color:azure;
+    text-transform: uppercase;
+}
+
+.titulo-secundario {
+    padding: 15px 15px 13px;
+    border-bottom: 2px solid azure;
+    text-align: center;
+    background-color: black;
+    color: azure;
+    font-size: 17px;
+    width: 470px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.7;
+}
+
+section {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article {
+    padding:  1px 20px 20px;
+    margin-bottom: 30px;
+    background-color: azure;
+}
+
+.titulo-artigo {
+    background-color: gainsboro;
+    padding: 15px;
+    font-size: 20px;
+    border-bottom: 2px solid #b8b8b8;
+
+}
+
+article a {
+    padding: 10px;
+    background-color: #b8b8b8;
+    /* para deixar uma borda redonda */
+    border-radius: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: gray;
+    padding: 10px 0;
+}
+
+footer p {
+    text-align: center;
+    color: azure;
+}
