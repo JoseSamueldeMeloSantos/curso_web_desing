@@ -92,7 +92,7 @@ a {
 /*tanto a classe quanto o id irão herdar as propriedades de sua tag(caso ela
 tenha sido alterada no css tbm.como é o caso)*/
 
-/*por em quanto prefira usar a classe*/
+/*por em quanto prefira usar a classe em vez do id*/
 
 /*ter dois id iguais em um mesmo arquivo html é conceitualmente errado*/
 
