@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ccc;
+}
+
+.hero {
+    /* esse ../ é para voltar um nível no diretório */
+    background-image: url(../imagens/bg-3.jpg);
+    height: 500px;
+    background-size: cover;
+    background-position: right center;
+    /* para a nav não empurrar o hero para baixo quando ele usar o margin-top
+    (o hero vai acaber encaixando no topo da web) */
+    padding-top: 1px;
+}
+
+.hero-content {
+    margin: 100px auto 0;
+    width: 80%;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 51px;
+    /* para colocar uma sombra */
+    /* deslocamento-x | deslocamento-y | raio-de-desfoque | cor */
+    text-shadow: 2px 2px 2px black;
+    /* para deixar uma coisa em maiúsculo sempre use o css */
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.hero-content p {
+    /* quant de vermelho| quant de verde | quant de azul | quant da opacidade(de 0 à 1) */
+    background-color: rgba(0, 0, 0, .7);
+    font-size: 18px;
+    display: inline-block;
+    padding: 16px;
+    border-bottom: 2px solid;
+}
+
+.hero nav ul {
+    margin: 20px 80px 0 0;
+    text-align: right;
+}
+
+.hero nav li {
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 16px;
+    border: 1px solid white
+}
+
+.hero nav a {
+    background-color: rgba(0, 0, 0, .3);
+    padding: 16px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    /* espaço entre as letras */
+    letter-spacing: 2px;
+}
+
+.hero nav a:hover {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+main {
+    width: 90%;
+    margin: auto;
+    /* isso serve para quando o navegadir expandir e retair */
+    /* define uma largura minima */
+    /* min-width: 420px;  */
+    /* define uma largura maxima*/
+    max-width: 860px;
+}
+
+article {
+    background-color: white;
+    padding: 16px;
+    margin-bottom: 32px;
+    margin-top: 32px;
+    /* as margin não se somam, elas se sobrepõem */
+}
+
+article h2 {
+    border-bottom: 2px solid #ccc;
+    background-color: #eee;
+    padding: 10px;
+    /* se eu falar para ter margin-top 0 o h2 vai expandir,pois vai sobrar espaço(o article tem o margin)*/
+    margin-top: 0;
+}
+
+/* assim ele só vai formatar o elemento a que possui a  a classe btn
+obs:isso vai deixar bem especifico*/
+a.btn {
+    background-color: #cdc7c3;
+    display: block;
+    padding: 12px 16px;
+    /* deixa a borda aredondada */
+    border-radius: 6px;
+    /* essa valor ajusta automaticamente a largura com o tamanho do conteúdo*/
+    width: fit-content;
+    margin-left: auto;
+    text-align: center;
+}
+/* a.btn{} !=  a .bnt
+
+a.btn{} -> formatará a tag a que possui a classe btn
+
+a .btn{} -> formatará apenas a classe .btn que estiver dentro de a*/
+
+.rodape {
+    color: white;
+    background-color: #6b6c68;
+    text-align: center;
+    padding: 30px;
+    text-shadow: 2px 2px 2px black;
+    letter-spacing: 2px;
+}
