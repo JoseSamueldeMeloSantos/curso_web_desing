@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>fit content</title>
+        <meta charset="utf-8">
+        
+        <style>
+
+            .container {
+                border: 2px solid black;
+                padding: 16px;
+                width: 300px;
+                margin-bottom: 16px;
+            }
+
+            .item {
+                background-color: blueviolet;
+                margin-bottom: 10px;
+                padding: 5px;
+            }
+            
+            .fit-content .item {
+                /* a largura vai se adaptar ao conteúdo(vai ficar com um tamanho perfeito) */
+                width: fit-content;
+            }
+            
+            .min-content .item {
+                /* define um tamanho mínimo possível(de acordo com o conteúdo) */
+                width: min-content;
+            }
+                  
+            .max-content .item {
+                /* define um tamanho máximo possível(de acordo com o conteúdo) */
+                width: max-content;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container fit-content">
+            <div class="item">
+                lorem
+            </div>
+            <div class="item">
+                Lorem ipsum dolor sit amet consectetur adipisicing 
+                elit. Recusandae, fugiat.
+            </div>
+            <div class="item">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere saepe odio error 
+                ad tenetur recusandae blanditiis dolorum totam cumque voluptate. Quaerat error 
+                rem ex laboriosam.
+            </div>
+            <div class="item">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi facilis, vero quae
+                ipsa doloribus sapiente voluptates fugit eaque ab, ad in iste dolorum. Nisi porro 
+                maxime dicta? Tenetur impedit culpa nam placeat aliquid ratione officiis dolorem 
+                magni. Ducimus illum laborum obcaecati itaque numquam eius iure quasi vero quia. 
+                Esse voluptates id aspernatur excepturi ratione perferendis deserunt sit cupiditate. 
+                Numquam facilis sint consectetur facere aspernatur natus fugit, praesentium quasi, 
+                rem officiis cum unde quisquam asperiores nesciunt.
+            </div>
+        </div>
+
+        <div class="container min-content">
+            <div class="item">
+                lorem
+            </div>
+            <div class="item">
+                Lorem ipsum dolor sit amet consectetur adipisicing 
+                elit. Recusandae, fugiat.
+            </div>
+            <div class="item">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere saepe odio error 
+                ad tenetur recusandae blanditiis dolorum totam cumque voluptate. Quaerat error 
+                rem ex laboriosam.
+            </div>
+            <div class="item">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi facilis, vero quae
+                ipsa doloribus sapiente voluptates fugit eaque ab, ad in iste dolorum. Nisi porro 
+                maxime dicta? Tenetur impedit culpa nam placeat aliquid ratione officiis dolorem 
+                magni. Ducimus illum laborum obcaecati itaque numquam eius iure quasi vero quia. 
+                Esse voluptates id aspernatur excepturi ratione perferendis deserunt sit cupiditate. 
+                Numquam facilis sint consectetur facere aspernatur natus fugit, praesentium quasi, 
+                rem officiis cum unde quisquam asperiores nesciunt.
+            </div>
+        </div>
+
+        <div class="container max-content">
+            <div class="item">
+                lorem
+            </div>
+            <div class="item">
+                Lorem ipsum dolor sit amet consectetur adipisicing 
+                elit. Recusandae, fugiat.
+            </div>
+            <div class="item">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere saepe odio error 
+                ad tenetur recusandae blanditiis dolorum totam cumque voluptate. Quaerat error 
+                rem ex laboriosam.
+            </div>
+            <div class="item">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi facilis, vero quae
+                ipsa doloribus sapiente voluptates fugit eaque ab, ad in iste dolorum. Nisi porro 
+                maxime dicta? Tenetur impedit culpa nam placeat aliquid ratione officiis dolorem 
+                magni. Ducimus illum laborum obcaecati itaque numquam eius iure quasi vero quia. 
+                Esse voluptates id aspernatur excepturi ratione perferendis deserunt sit cupiditate. 
+                Numquam facilis sint consectetur facere aspernatur natus fugit, praesentium quasi, 
+                rem officiis cum unde quisquam asperiores nesciunt.
+            </div>
+        </div>
+    </body>
+</html>
