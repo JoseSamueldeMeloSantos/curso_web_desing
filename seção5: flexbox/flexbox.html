@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+
+        <style>
+            .flexbox {
+                height: 250px;
+                border: 3px solid red;
+                /* a propriedade flex afeta os filhos 
+                não ele em si,mas os seus filhos diretos */
+                /* a propriedade flex vai esticar na vertical 
+                e se distribuir em uma única linha(fica tipo uma coluna)*/ 
+                display: flex;
+                margin-bottom: 16px;
+               
+            }
+
+            .flexbox div {
+                border: 2px solid orange;
+                /* a largura de um componente item só vai fazer diferença
+                enquanto couber no flex container(isso acontece por causa do nowrap)  */
+                width: 200px;
+                margin: 15px;
+            }
+
+            .flex-container1 {
+                 /* flex-wrap define se um elemento vai quebrar linha ou não */
+                 flex-wrap: wrap;
+                /* wrap -> quebra a linha
+                nowrap -> não quebra a linha(padrão) */
+                /* com o wrap ele vai quebrar a linha quando o elemento 
+                não couber mais na direita do container */
+                
+                /* o flex-direction define se os elementos vão ficar em
+                uma única linha ou uma única coluna */
+                flex-direction: row;
+                /* row -> única coluna(padrão)
+                   columm -> única coluna 
+                   row-reverse/columm-revese -> deixa em uma ordem reversa*/
+
+                /* flex flow é um atalho para o flex-direction e o flex-wrap */
+                /* flex-flow: row wrap; */
+            }
+
+            .flex-container2 {
+                /* vai alinha/distribuir todos os elementos 
+                usando espaço dentro de um container na horizontal */
+                justify-content: space-around;
+                /* flex-start -> alinha na esquerda
+                   flex-end -> alinha na direita
+                   center -> alinha no meio
+                   space-around -> pega o espaço que sobra e distribui ao redor dos flex items
+                   space-between -> pega o espaço que sobra e distribui apenas entre os flex items
+                   space-evenly -> faz o mesmo que o space-around,porém o mesmo espaço que ele colocar
+                                    entre os flex items vai colocar entre o flex item eo container*/
+            }
+
+            .flex-container2 div {
+                width: 30px;
+                margin: 0;
+            }
+
+            .flex-container3 {
+                justify-content: space-around;
+                 /* vai alinha/distribuir todos os elementos 
+                usando espaço dentro de um container na vertical */
+                align-items: stretch;
+                /* flex-start -> alinha no topo
+                   flex-end -> alinha na parte inferior
+                   center -> alinha no meio
+                   stretch -> sem nada(padrão)
+                 */
+
+            }
+
+            .flex-container3 div {
+                width: 30px;
+                margin: 0;
+            }
+
+            .flex-container4 {
+                justify-content: space-around;
+                align-items: baseline;
+            }
+
+            .flex-container4 div {
+                width: 30px;
+                margin: 0;
+            }
+        </style>
+    </head>
+
+    <body>
+        
+        <div class="flexbox flex-container1">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+        </div>
+
+        <div class="flexbox flex-container2">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+        </div>
+
+        <div class="flexbox flex-container3">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+        </div>
+
+        <div class="flexbox flex-container4">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+        </div>
+    </body>
+</html>
