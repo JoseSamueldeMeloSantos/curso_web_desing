@@ -71,6 +71,8 @@
                    flex-end -> alinha na parte inferior
                    center -> alinha no meio
                    stretch -> sem nada(padrão)
+                   baseline -> alinha usando como referencia a base da fonte
+                   
                  */
 
             }
@@ -88,6 +90,40 @@
             .flex-container4 div {
                 width: 30px;
                 margin: 0;
+            }
+
+            .flex-container5 {
+                /* nunca use o align-items e o align content ao mesmo tempo */
+                justify-content: center;
+                /* alinha quando se tem uma unica linha */
+                align-items: flex-end;
+                /* serve para alinhar quando se tem/pode ter mais de uma linha  */
+                align-content: space-evenly;
+                /* essa propriedade que vai definir se o align-content ou 
+                justify-content vai funcionar
+                
+                wrap -> align-content
+                nowrap -> align-items*/
+                flex-wrap: wrap;
+
+                /* propriedades dos align content
+
+                    flex-start -> alinha no topo
+                    flex-end -> alinha na parte inferior
+                    center -> alinha no meio
+                    stretch -> sem nada(padrão)
+                    baseline -> alinha usando como referencia a base da fonte
+                    space-around -> pega o espaço que sobra e distribui ao redor dos flex items
+                    space-between -> pega o espaço que sobra e distribui apenas entre os flex items
+                    space-evenly -> faz o mesmo que o space-around,porém o mesmo espaço que ele colocar
+                                    entre os flex items vai colocar entre o flex item eo container
+                    stretch -> Distribui os itens uniformemente
+                                 Estica os itens com tamanho 'auto' para caberem
+                                 no contêiner*/
+            }
+
+            .flex-container5 div {
+                width: 300px;
             }
         </style>
     </head>
@@ -116,6 +152,13 @@
         </div>
 
         <div class="flexbox flex-container4">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+        </div>
+
+        <div class="flexbox flex-container5">
             <div class="div1">1</div>
             <div class="div2">2</div>
             <div class="div3">3</div>
