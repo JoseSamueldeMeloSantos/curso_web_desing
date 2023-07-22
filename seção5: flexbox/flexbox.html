@@ -158,12 +158,67 @@
                 height: 50px;
             }
 
+            /* a partir de agora iremos aplicar as propriedades no flex item*/
             .flex-container7 .div2 {
                  /* o flex-basis define o comprimento de um elemento
                 no main-axis*/
                 /* o flex-basis anula o width(se tiver) */
                 flex-basis: 200px;
                  /* o flex-basis com auto vai aplicar o valor do width no flex-basis */
+            }
+
+             
+            .flex-container8 {
+                justify-content: center;
+                align-items: center;
+                /* pode-se usar gap no flexbox */
+                gap: 0; /*= margin*/
+            }
+
+            .flex-container8 div {
+                flex-basis: 50px;
+                background-color: orange;
+            }
+
+            .flex-container8 .div2 {
+                /* pega o espaço sobrando vai ser aplicado
+                nos elementos modificados*/
+                flex-grow: 1;
+
+            }
+
+            .flex-container8 .div4 {
+                flex-grow: 2; 
+                /* é como se fosse 2/3 */
+                /* formula:
+                            valor / totalUnidadesFlexGrow */
+            }
+
+            .flex-container9 {
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .flex-container9 div {
+                flex-basis: 100px;
+                background-color: blue;
+                margin: 0;
+            }
+
+            .flex-container9 .div1 {
+                /*  define a capacidade de um item flexível encolher em r
+                elação aos outros quando há falta de espaço no container flexível. 
+                (o item selecionado vai diminuir mais do que os outros para não haver
+                quebra de linha)*/
+                flex-shrink: 2;
+            }
+
+            .flex-container9 .div3 {
+                flex-shrink: 3;
+                /* é como se fosse 3/5 */
+                /* formula:
+                            valor / totalUnidadesFlexGrow */
             }
         </style>
     </head>
@@ -213,6 +268,13 @@
         </div>
 
         <div class="flexbox flex-container7">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+        </div>
+
+        <div class="flexbox flex-container8">
             <div class="div1">1</div>
             <div class="div2">2</div>
             <div class="div3">3</div>
