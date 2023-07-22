@@ -125,6 +125,25 @@
             .flex-container5 div {
                 width: 300px;
             }
+            
+            .flex-container6 {
+                /* main size -> eixo x  
+                cross size -> eixo y */
+                /* é possível inverter a orientação do eixo com
+                o flex direction*/
+                justify-content: flex-end;
+                align-items: flex-start;
+                flex-direction: row-reverse;
+                height: 400px;
+                /* o justify-content/align-items/align-content depende
+                diretamente do flex-direction */
+            }
+
+            .flex-container6 div {
+                background-color: yellow;
+                width: 50px;
+                height: 20px;
+            }
         </style>
     </head>
 
@@ -159,6 +178,13 @@
         </div>
 
         <div class="flexbox flex-container5">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+        </div>
+
+        <div class="flexbox flex-container6">
             <div class="div1">1</div>
             <div class="div2">2</div>
             <div class="div3">3</div>
