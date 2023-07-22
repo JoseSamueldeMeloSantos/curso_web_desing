@@ -212,6 +212,10 @@
                 (o item selecionado vai diminuir mais do que os outros para não haver
                 quebra de linha)*/
                 flex-shrink: 2;
+                /* valores padroes:
+                
+                flex-shrink = 1(se colocar 0 o elemento não diminui o tamanho)
+                flex-grow = 0*/
             }
 
             .flex-container9 .div3 {
@@ -219,6 +223,32 @@
                 /* é como se fosse 3/5 */
                 /* formula:
                             valor / totalUnidadesFlexGrow */
+            }
+
+            .flex-container10 div {
+                background-color: green;
+            }
+
+            .flex-container10 .div2 {
+                /* o valor padrão do order é 0 
+                
+                quanto maior o valor mais para frente ele vai está no main-axis
+                quanto menor(vale para negativo tbm) o valor mais para trás 
+                ele vai está no main-axis*/
+                /* order: 1; */
+                font-size: 36px;
+                color: white;
+            }
+
+            .flex-container10 .div2 {
+                order: 2;
+                /* é equivalente ao align-items,porém é para o elemento individual
+                (até os valores são os mesmos e possuem o mesmo poder) */
+                align-self: center;
+            }
+
+            .flex-container10 .div1 {
+                order: 1;
             }
         </style>
     </head>
@@ -275,6 +305,20 @@
         </div>
 
         <div class="flexbox flex-container8">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+        </div>
+
+        <div class="flexbox flex-container9">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+        </div>
+
+        <div class="flexbox flex-container10">
             <div class="div1">1</div>
             <div class="div2">2</div>
             <div class="div3">3</div>
