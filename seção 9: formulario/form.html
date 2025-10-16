@@ -13,8 +13,10 @@
     method -> forma de recebimento
         get -> poucos dados e que requer pouca segurança(envio por url)
         post -> quando tem mais dados e requer segurança
+    
+    target(_blank) -> abre a busca em uma nova aba
     -->
-    <form action="http://www.google.com.br/search" method="get">
+    <form action="http://www.google.com.br/search" method="get" target="_blank">
         <label for="busca">Faça uma busca</label><!--forma de indicar oque é para preencher-->
         <!--entrada de dados-->
         <input type="text" name="q" id="busca"><!--de texto -->
