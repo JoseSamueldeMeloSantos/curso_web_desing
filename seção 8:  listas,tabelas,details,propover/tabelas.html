@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabelas</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: beige;
+        }
+        table {
+            margin: auto;
+            width: 80%;
+            
+            border-collapse: collapse;
+        }
+
+        td {
+            text-align: center;
+            border: 1px solid black;
+            margin: auto;
+            padding: 10px;
+        }
+
+        th {
+            padding: 14px;
+            background-color: rgb(184, 184, 136);
+            border: 2px solid rgb(143, 143, 103);
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <caption>Tabela de preço de cursos</caption><!--essa tag funciona tipo um titulo da tabela-->
+        
+        <thead>
+            <tr>
+                <th>Área</th>
+                <th>Cursos</th>
+                <th>Investimento</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="3">Desing</td>
+                <td>InDesing</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+
+            <tr>
+                <td>photoshop</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+
+
+            <tr>
+                <td>Ilustrator</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+
+            <tr>
+                <td rowspan="4">Development</td>
+                <td>HTML</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+
+            <tr>
+                <td>CSS</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+
+            <tr>
+                <td>JavaScript</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+
+            <tr>
+                <td>PHP</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">Valores sujeitos a ajustes</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
