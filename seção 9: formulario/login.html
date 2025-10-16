@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <h1>LOGIN</h1>
+    <h1>Login</h1>
 
     <form action="#" method="get">
         <fieldset><!--Define um bloco de formulario-->
-            <legend>LOGIN</legend><!--titulo do bloco de formulado-->
+            <legend>Entre com seus dados de acesso</legend><!--titulo do bloco de formulado-->
 
             <label for="user">Usuário</label>
             <input type="text" id="user" required autofocus><!-- autofocus -> assim que a pagina é aberta o curso já fica no campo-->
@@ -17,7 +19,7 @@
             <label for="pass">password</label>
             <input type="password" id="pass" required><!--required -> torna o campo obrigatorio para o envio do formulario-->
 
-            <input type="submit" value="LOGIN">
+            <input type="submit" value="LOGIN" class="btn">
         </fieldset>
     </form>
 </body>
