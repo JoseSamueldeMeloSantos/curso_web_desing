@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Popover</title>
+
+    <style>
+        /* Estiliza o popover quando ele está aberto */
+        :popover-open {
+            width: 300px;
+            padding: 0 12px;
+            border-radius: 12px;
+        }
+
+        /* Estiliza o fundo escurecido quando o popover estiver ativo */
+        ::backdrop {
+            background-color: rgba(0, 0, 0, 0.32);
+        }
+
+        /* Remove posicionamento automático do popover dentro de uma div */
+        .popover-container :popover-open {
+            inset: unset;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Curso web design - popover</h1>
+
+    <!-- 
+        Botão que alterna a exibição do popover #my-popover.
+        A ação padrão é "toggle", ou seja: abre se estiver fechado e fecha se estiver aberto.
+    -->
+    <button popovertarget="my-popover">Toggle popover</button>
+
+    <!-- 
+        Popover padrão.
+        O atributo 'popover' sem valor funciona como 'auto' por padrão.
+    -->
+    <div id="my-popover" popover>
+        Este texto é aberto ao clicar no botão
+    </div>
+
+    <hr>
+
+    <!-- 
+        Outro botão com popover "auto" explicitamente declarado.
+        Fecha automaticamente ao clicar fora.
+    -->
+    <button popovertarget="my-popover2">popover auto (default)</button>
+    <div id="my-popover2" popover="auto">
+        Este texto é aberto ao clicar no botão
+    </div>
+
+    <hr>
+
+    <!-- 
+        Popover manual: só fecha por código ou por outro botão.
+    -->
+    <button popovertarget="my-popover3">popover manual</button>
+    <div id="my-popover3" popover="manual">
+        Este texto não fecha ao clicar fora
+    </div>
+
+    <hr>
+
+    <!-- 
+        Dois botões controlam o mesmo popover manualmente:
+        - um para "show" (mostrar)
+        - outro para "hide" (esconder)
+    -->
+    <button popovertarget="my-popover4" popovertargetaction="show">Show popover</button>
+    <button popovertarget="my-popover4" popovertargetaction="hide">Hide popover</button>
+    <div id="my-popover4" popover="manual">
+        Este texto não fecha ao clicar fora
+    </div>
+
+    <hr>
+
+    <!-- 
+        Popover dentro de uma div container.
+        A regra CSS remove o posicionamento automático usando "inset: unset;".
+    -->
+    <div class="popover-container">
+        <button popovertarget="my-popover5">Toggle popover dentro de div</button>
+        <div popover id="my-popover5">
+            Texto de ajuda do popover
+        </div>
+    </div>
+
+</body>
+</html>
