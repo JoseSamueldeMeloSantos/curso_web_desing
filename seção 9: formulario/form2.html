@@ -11,8 +11,9 @@
             <legend>Introdução</legend>
             <!--é importante colocar o tipo de input correto por questão de usuabilidade para o usuario-->
 
+            <label for="emailid">email</label>
             <!--verifica se e um email antes de mandar-->
-            <input type="email" name="email"><!--input para e-mail-->
+            <input type="email" name="email" id="emailid"><!--input para e-mail-->
 
             <br>
             <label for="filhos">quantidade de filhos</label>
@@ -29,16 +30,49 @@
             <!--input para marcação harbitraria
             obs: para haver harbitrariedade todos devem ter o mesmo name
             -->
+            <!--
+                name -> para categoricar o  checkbox
+                value -> valor que vai ser enviado para o server
+            -->
             possui atividade extra
             <label>
-                <input type="radio" name="atvExtra">sim
+                <input type="radio" name="atvExtra" value="s">sim
             </label>
             <label>
-                <input type="radio" name="atvExtra">nao
+                <input type="radio" name="atvExtra" value="n">nao
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Área de Interesse</legend>
+
+            <!--
+                name -> para categoricar o  checkbox
+                value -> valor que vai ser enviado para o server
+            -->
+            <label>
+                <input type="checkbox" name="Interesse" value="html">HTML
+            </label>
+            
+            <label>
+                <input type="checkbox" name="Interesse" value="css">CSS
             </label>
 
-            <input type="submit" value="submit">
+            <label>
+                <input type="checkbox" name="Interesse" value="js">JavaScript
+            </label>
+            
+            <label>
+                <input type="checkbox" name="Interesse" value="python">Python
+            </label>
+            
+            <label>
+                <input type="checkbox" name="Interesse" value="java">Java
+            </label>
         </fieldset>
+
+        <br><br><br>
+        <input type="submit" value="submit">
     </form>
 </body>
 </html>
