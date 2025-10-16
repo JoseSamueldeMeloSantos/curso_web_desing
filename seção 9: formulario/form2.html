@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário 2</title>
+
+    <style>
+        textarea {
+            resize: none;/* bloqueia o redicionamento do textarea pelo usuario */
+        }
+    </style>
 </head>
 <body>
     <form action="">
@@ -69,10 +75,90 @@
             <label>
                 <input type="checkbox" name="Interesse" value="java">Java
             </label>
+            
+            <br><br><br>
+            
+            <label for="select">escolha uma linguagem</label>
+            <select name="linguagem" id="select" required multiple size="7"><!--
+                select -> agrupa opções que podem ser selecionadas com um click 
+                multiple -> permite mais de um atributo selecionado ao mesmo tempo
+                size -> define quantos atributos sera exibido de uma vez
+                -->
+                
+                <option>selecione uma opção</option><!--option-> opção presente no select-->
+
+                <optgroup label="frontend"><!--para categorizar as opções em grupos-->
+                    <option value="html">html</option>
+                    <option value="css">css</option>
+                    <option value="js">javaScript</option>
+                </optgroup>
+
+                <optgroup label="backend">
+                    <option value="python">python</option>
+                    <option value="java">java</option>
+                </optgroup>
+            
+            </select>
+
+            <br>
+
+            <!--agrupa opções que podem ser selecionadas a partir de digitação-->
+            <input type="text" list="linguagemList"><!--list -> linka o input com as opções(datalist)-->
+            <datalist id="linguagemList"><!--datalist -> agrupador de opções que podem ser selecionadas a partir de digitação-->
+
+                <option value="html">html</option><!--opção do datalist-->
+                <option value="css">css</option>
+                <option value="js">javaScript</option>
+                <option value="python">python</option>
+                <option value="java">java</option>
+            </datalist>
+        </fieldset>
+
+        <fieldset>
+            <legend>mensagem</legend>
+
+            <!--tipo de entrada que permite anexar um campo de texto muito longo-->
+            <textarea name="msg" id="" cols="30" rows="8" maxlength="100" readonly></textarea>
+            <!--
+                cols -> numero de colunas q o usuario pode digitar
+                rows -> numero de linhas que o usuario pode digitar
+
+                --esses atributos sao universais
+
+                maxlength -> quant maxima de caracteres que o user pode digitar(pode ser usado em outros campos de texto)
+                readonly -> o textarea vira apenas leitura(bloqueia a edição pelo user)
+                disable -> faz a mesma coisa q o readonly porem tem uma indicação visual
+                value -> define um valor já presente 
+                -->
+            <br>
+
+            <textarea cols="50" rows="8">
+                contato de utilização
+            </textarea>
+            <label>
+                <input type="checkbox"> li e aceito o contrato
+            </label>
+
+            <!--input de entrada de arquivo-->
+            <input type="file">
         </fieldset>
 
         <br><br><br>
         <input type="submit" value="submit">
+        <br>
+
+        <!--input de button para js -->
+        <input type="button" value="">
+
+        <!--button que funciona como um input submit-->
+        <button type="submit"></buttont>
+
+        <!--input para pesquisa-->
+        <input type="search">
+
+
+        <!--tipo de volume-->
+        <input type="range" min="0" max="10" step="2"><!--step -> pula de 2 em 2-->
     </form>
 </body>
 </html>
