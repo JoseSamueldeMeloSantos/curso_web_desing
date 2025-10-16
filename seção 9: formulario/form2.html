@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 2</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Introdução</legend>
+            <!--é importante colocar o tipo de input correto por questão de usuabilidade para o usuario-->
+
+            <!--verifica se e um email antes de mandar-->
+            <input type="email" name="email"><!--input para e-mail-->
+
+            <br>
+            <label for="filhos">quantidade de filhos</label>
+            <!--min e max estabelece a quantiade minima e maxima que é possivel colocar-->
+            <input type="number" id="filhos" min="0" max="10"><!--input para numero(para quantidade)-->
+
+            <br>
+
+            <!--min e max estabelece a quantiade minima e maxima que é possivel colocar-->
+            <input type="date" min="1999-01-01" max="2025-10-01"><!--input para datas -->
+
+            <br>
+
+            <!--input para marcação harbitraria
+            obs: para haver harbitrariedade todos devem ter o mesmo name
+            -->
+            possui atividade extra
+            <label>
+                <input type="radio" name="atvExtra">sim
+            </label>
+            <label>
+                <input type="radio" name="atvExtra">nao
+            </label>
+
+            <input type="submit" value="submit">
+        </fieldset>
+    </form>
+</body>
+</html>
