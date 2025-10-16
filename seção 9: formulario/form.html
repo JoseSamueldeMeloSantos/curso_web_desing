@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Fomulário de Busca</h1>
+
+    <!--
+    action -> pagina que vai receber os dados
+    method -> forma de recebimento
+        get -> poucos dados e que requer pouca segurança(envio por url)
+        post -> quando tem mais dados e requer segurança
+    -->
+    <form action="http://www.google.com.br/search" method="get">
+        <label for="busca">Faça uma busca</label><!--forma de indicar oque é para preencher-->
+        <!--entrada de dados-->
+        <input type="text" name="q" id="busca"><!--de texto -->
+        <!--nome -> nome do tipo de dados que o server vai ter acesso-->
+        <input type="submit" value="OK"><!--Para envio de formulario(cria um botão)-->
+    </form>
+</body>
+</html>
