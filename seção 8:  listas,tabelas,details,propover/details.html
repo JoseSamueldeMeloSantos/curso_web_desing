@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+    details {
+    width: 300px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    font-family: sans-serif;
+    }
+
+    summary {
+    font-weight: bold;
+    cursor: pointer;
+    list-style: none; /* Remove o triângulo padrão */
+    }
+
+    summary::marker {
+    display: none; /* Oculta o marcador nativo em navegadores que suportam */
+    }
+
+    summary::before {
+    content: '➕'; /* Ícone personalizado */
+    margin-right: 8px;
+    transition: transform 0.2s ease;
+    }
+
+    /* seletor por atributo*/
+    details[open] summary::before {
+    content: '➖'; /* Ícone alternativo quando aberto */
+    }
+
+</style>
+</head>
+<body>
+    <h1>Curso Web desing</h1>
+    <!--cor da seta é a cor da font-->
+    <details>
+        <summary>Pré-Requisitos</summary>
+        <p>saber usar um computador</p>
+    </details>
+
+    <!--open -> fala para o navegador já iniciar em details aperto-->
+    <details open>
+        <summary>carga horaria</summary>
+        <p>100 horas</p>
+    </details>
+</body>
+</html>
