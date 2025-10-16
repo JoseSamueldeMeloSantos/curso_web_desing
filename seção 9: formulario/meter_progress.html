@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>meter</h1>
+    <!--
+        é como uma reguá(barra)
+
+        value -> valor representado no momento
+        min -> min da regua
+        max -> max da regua
+        low -> definição dq é baixo para o meter
+        heigh -> definição dq é valor auto para o meter
+        optimim -> definição dq é o valor ideal
+    -->
+    <label>reguá
+        <meter value="50" min="0" max="100" low="30" high="90" optimum="60"></meter>
+    </label>
+
+
+    <h1>progress</h1>
+    <!--
+        erecomendado usar dentro de um label
+
+        progresso de uma determinada tarefa(não tem min)
+
+            value -> valor atual 
+            max -> valor maximo
+    -->   
+    <label>  porcentagem da tarefa
+        <!--texto apresentado caso o broweser não entenda a tag
+                                        |               -->
+        <progress value="50" max="100">50%</progress>
+    </label>
+</body>
+</html>
