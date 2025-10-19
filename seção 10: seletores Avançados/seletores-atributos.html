@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+
+    <style>
+        a[href="#"] {
+            opacity: .2;
+        }
+
+        a[href="#"]:not(.link-ok) {
+            opacity: .2;
+        }
+
+        a[href^="http"] {
+            color: red;
+        }
+
+        a[href$=".pdf"]{
+            color: green;
+        }
+
+        a[target="_blank"] {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">link falso</a></li>
+        <li><a href="#">link falso</a></li>
+        <li><a href="http://serfrontend.com" target="_blank">link externo</a></li>
+        <li><a href="#">link para um pdf</a></li>
+        <li><a href="pasta/arquivo.pdf">link falso</a></li>
+    </ul>
+</body>
+</html>
