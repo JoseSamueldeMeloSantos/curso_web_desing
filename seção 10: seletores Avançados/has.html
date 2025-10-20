@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Document</title>
+
+        <style>
+            p a{
+                color: red;
+                background-color: yellow;
+            }
+
+            /*selecione o p que contém o a*/
+            p:has(a) {
+                background-color: #ccc;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Labore quae sunt, assumenda explicabo recusandae cum dignissimos 
+            ratione deserunt doloribus deleniti reprehenderit voluptatem laudantium 
+            vel dolor dolore! Deleniti commodi perferendis doloribus!
+        </p>
+          <p>
+            <a href="#">Lorem ipsum dolor sit amet consectetur</a> adipisicing elit. 
+            Labore quae sunt, assumenda explicabo recusandae cum dignissimos 
+            ratione deserunt doloribus deleniti reprehenderit voluptatem laudantium 
+            vel dolor dolore! Deleniti commodi perferendis doloribus!
+        </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Labore quae sunt, assumenda explicabo recusandae cum dignissimos 
+            ratione deserunt doloribus deleniti reprehenderit voluptatem laudantium 
+            vel dolor dolore! Deleniti commodi perferendis doloribus!
+        </p>
+    </body>
+</html>
