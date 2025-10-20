@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <title>Document</title>
+
+    <style>
+        button {
+            background-color: gray;
+            color: white;
+            border: none;
+            padding: 1em;
+            margin-bottom: .5em;
+        }
+
+        button:disabled {/*quando a tag tá desabilitada*/
+            opacity: .5;
+        }
+
+        /*quando a tag tá vazia*/
+        p:empty::after {/*espaço não é vazio*/
+            content: "paragrafo vazio";
+        }
+
+        a:focus {/*quando o mause tá clickando ou o user ta navegando com o tab*/
+            background-color: yellow;
+        }
+        /*obs:vc pode usar o focus e hover em conjunto*/
+        a:hover {/*quando o mouse tá em cima*/
+            background-color: yellow;
+        }
+
+        /*estilo para quando é possivel ler e escrever*/
+        input[type="text"]:read-write {
+            background-color: #999;
+            border: none;
+            padding: .5em;
+        }
+
+        /*estilo para quando é possivel ler e escrever e não estiver desativado*/
+        input[type="text"]:read-only:not(:disabled) {
+            background-color: yellow;
+        }
+
+        /*estilo para quando tiver placeholder*/
+        input[type="text"]::placeholder {
+            color: white;
+        }
+
+        /*estilo para quando o placeholder estiver visivel*/
+        input[type="text"]:placeholder-shown {
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <button>vai</button>
+    <br>
+    <button disabled="disabled">vai disabled</button>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Deleniti nobis eligendi provident repellat magni reprehenderit 
+        consequuntur, unde sapiente debitis et modi maxime ratione voluptates 
+        at dolores placeat. Praesentium, dolores repellat.
+    </p>
+    <p> </p>
+    <p></p>
+
+    <ul>
+        <li><a href="#">link falso</a></li>
+        <li><a href="#">link falso</a></li>
+        <li><a href="#">link falso</a></li>
+        <li><a href="#">link falso</a></li>
+        <li><a href="#">link falso</a></li>
+    </ul>
+
+    <!--tabindex => para adicionar focus na tag |
+    esse numero é a ordem configurada do focus
+    (normalmente iremos usar o numero zero)-->
+    <p tabindex="0">Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+   <form action="#">
+        <input type="text" value="valor inicial"><br><br>
+        <input type="text" value="valor" disabled><br><br>
+        <input type="text" value="valor" readonly><br><br>
+        <input type="text" placeholder="placeholder"><br><br>
+    </form>
+
+    <br>
+    <br>
+    <br>
+</body>
+</html>
