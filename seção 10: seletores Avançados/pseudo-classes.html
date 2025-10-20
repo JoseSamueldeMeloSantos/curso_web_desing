@@ -52,13 +52,30 @@
             background-color: aqua;
         }
 
+        p:only-child {/*para selecionar unico filho de determinado pai*/
+            background-color: red;
+        }
+
+        p:read-write {
+            border-bottom: 2px solid red;
+        }
+
+        /*quando vc clickar no link que vai para div que tem o endeço, o estilo é aplicado*/
+        div:target { 
+            border: 3px dashed red;
+        }
     </style>
 </head>
 <body>
-    <button>vai</button>
-    <br>
-    <button disabled="disabled">vai disabled</button>
 
+    <div id="top">
+        <a href="#titulo">Vai para titulo</a>
+
+        <button>vai</button>
+        <br>
+        <button disabled="disabled">vai disabled</button>
+    </div>
+    
     <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
         Deleniti nobis eligendi provident repellat magni reprehenderit 
@@ -92,6 +109,23 @@
         <input type="text" placeholder="placeholder"><br><br>
     </form>
 
+
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet.
+        </p>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+
+        <!--contenteditable => para deixar o conteudo editavel pelo user-->
+        <p contenteditable="true">paragrafo editavel</p>
+    </div>
+
+    <h1 id="titulo">titulo</h1>
+
+    <a href="#top">vai para o topo</a>
     <br>
     <br>
     <br>
