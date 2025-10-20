@@ -6,6 +6,32 @@
 
     <title>Seletores de atributos</title>
 
+    <style>
+        a[target="_blank"]::after {
+            content: url("./imagens/newWindow-icon.png");
+        }
+
+        a[href$=".pdf"]::after {
+            content: url("./imagens/pdf-icon.gif");
+        }
+
+        input[type="checkbox"]:checked + label {
+            color: green;
+        }
+
+        :not(input[type="checkbox"]:checked) + label {
+            color: red;
+        }
+
+        input[type="checkbox"]:disabled + label {
+            color: blue;
+        }
+
+        li li:nth-child(3) {
+            background-color: aqua;
+        }
+    </style>
+
 </head>
 
 <body>
