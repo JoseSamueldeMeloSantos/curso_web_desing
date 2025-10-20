@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        /*é meio que um conteúdo falso*/
+        p::before {
+            content: "ANTES";
+        }
+
+        p::after {
+            content: "DEPOIS";
+        }
+
+        div {
+            border: 6px solid red;
+            padding: 1em;
+            position: relative;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        div::before {
+            content: "";
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            /*
+            foi necessario colocar block pois a content(before/after) se comporta como inline 
+            e por causa disso a altura e largura não se aplicaria*/
+            display: block;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Fuga voluptatibus, sint laudantium eius libero ratione at 
+            qui eligendi voluptate expedita vel, a illum eaque cum itaque 
+            repellat quas deleniti. A?
+        </p>
+    </div>
+</body>
+</html>
