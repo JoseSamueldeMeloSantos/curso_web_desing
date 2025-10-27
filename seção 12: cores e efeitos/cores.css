@@ -1,10 +1,16 @@
 body {
     font-family: sans-serif;
-    background-color: url(imagens/tile.png);
+    background-image: linear-gradient(to top, blue 50%, red 60%), url(imagens/tile.png);
+    background-attachment: fixed, scroll;
+    background-blend-mode: color;
 }
 
 /* usando contado */
 .cores {
+
+    --color: color-mix(in srgb, var(red), transparent);
+
+    background-color: var(--color);
     width: 80%;
     border: 8px dashed black;
     margin: 20px auto;
