@@ -51,4 +51,47 @@ section {
     background-clip: content-box, padding-box;
 }
 
+.cores:nth-last-of-type(4) {
+    /*ellipse por padrão*/
+    /*espalha as cores do centro para os cantos(por padrao)*/
+    background-color: radial-gradient(blue, red, green 50%, yellow);
+ }
 
+ .cores:nth-last-of-type(5) {
+    background-color: radial-gradient(circle ,blue, red, green 50%, yellow);
+ }
+
+.cores:nth-last-of-type(6) {
+    background-color: radial-gradient(circle ,blue, red, green 50%, yellow);
+}
+
+.cores:nth-last-of-type(7) {
+    /*background-color: radial-gradient(circle at left top ,blue, red);*/
+    /*                                   eixo -> x   y*/
+    background-color: radial-gradient(circle at 10% 50% ,blue, red);
+}
+
+
+.cores:nth-last-of-type(7) {
+    /*background-color: radial-gradient(circle at left top ,blue, red);*/
+    /*                                   eixo -> x   y*/
+    background-color: radial-gradient(closest-corner at 10% 50% ,blue, red);
+}
+
+.cores:nth-last-of-type(7) {
+    /*background-color: radial-gradient(circle at left top ,blue, red);*/
+    /*                                   eixo -> x   y*/
+    background-color: radial-gradient(farthest-corner at 10% 50% ,blue, red);
+}
+
+.cores:nth-last-of-type(7) {
+    /*background-color: radial-gradient(circle at left top ,blue, red);*/
+    /*                                   eixo -> x   y*/
+    background-color: radial-gradient(closest-side at 10% 50% ,blue, red);
+}
+
+.cores:nth-last-of-type(7) {
+    /*background-color: radial-gradient(circle at left top ,blue, red);*/
+    /*                                   eixo -> x   y*/
+    background-color: radial-gradient(farthest-side at 10% 50% ,blue, red);
+}                              /* ate onde vai -^ */
