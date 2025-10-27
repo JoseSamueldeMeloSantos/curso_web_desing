@@ -72,26 +72,51 @@ section {
 }
 
 
-.cores:nth-last-of-type(7) {
+.cores:nth-last-of-type(8) {
     /*background-color: radial-gradient(circle at left top ,blue, red);*/
     /*                                   eixo -> x   y*/
     background-color: radial-gradient(closest-corner at 10% 50% ,blue, red);
 }
 
-.cores:nth-last-of-type(7) {
+.cores:nth-last-of-type(9) {
     /*background-color: radial-gradient(circle at left top ,blue, red);*/
     /*                                   eixo -> x   y*/
     background-color: radial-gradient(farthest-corner at 10% 50% ,blue, red);
 }
 
-.cores:nth-last-of-type(7) {
+.cores:nth-last-of-type(10) {
     /*background-color: radial-gradient(circle at left top ,blue, red);*/
     /*                                   eixo -> x   y*/
     background-color: radial-gradient(closest-side at 10% 50% ,blue, red);
 }
 
-.cores:nth-last-of-type(7) {
+.cores:nth-last-of-type(11) {
     /*background-color: radial-gradient(circle at left top ,blue, red);*/
     /*                                   eixo -> x   y*/
     background-color: radial-gradient(farthest-side at 10% 50% ,blue, red);
 }                              /* ate onde vai -^ */
+
+.cores:nth-last-of-type(12) {
+    /*parece com o radial mas é tipo um feixe de lux que se espalha do sentro*/
+    background-color: conic-gradient(from 45deg, red,blue,red);
+/*      agulo do inicio da primeira cor  -^*/
+}
+
+.cores:nth-last-of-type(12) {
+    background-color: cadetblue;
+/*  adiciona um filtro*/
+    filter: blur();
+}
+
+.cores:nth-of-type(13) {
+    background-image: conic-gradient(#f00, #ff0, #0f0, #0ff, #00f, #f0f, #f00);
+    transition: filter 5s linear;
+    /*define uma proporção de tela(tipo aquelas fotos do insta)*/
+    aspect-ratio: 1;
+}
+
+.cores:nth-of-type(13):hover {
+    filter: hue-rotate(10turn)/*efeito epleptico*/
+}
+
+
