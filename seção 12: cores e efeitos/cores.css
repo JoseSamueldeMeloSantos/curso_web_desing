@@ -119,4 +119,23 @@ section {
     filter: hue-rotate(10turn)/*efeito epleptico*/
 }
 
+.cores:nth-of-type(14) {
+    background-image:
+        repeating-linear-gradient(to top right, white 0px, white 5px, black 5px, black 10px);
+}
+
+.cores:nth-of-type(15) {
+    background-image:
+        repeating-radial-gradient(to top right, white 0px, white 5px, black 5px, black 10px);
+}
+
+.cores:nth-of-type(15) {
+    background-image:
+        repeating-conic-gradient(to top right, white 0deg, white 5deg, black 5deg, black 10deg);
+}
+
+.cores:nth-of-type(16) {
+    background-image: linear-gradient(to top right, transparent 50%, red 50%);
+    filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, .8));
+}
 
