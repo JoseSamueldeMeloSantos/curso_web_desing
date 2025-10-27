@@ -136,6 +136,6 @@ section {
 
 .cores:nth-of-type(16) {
     background-image: linear-gradient(to top right, transparent 50%, red 50%);
+    /*coloca sombra em todos os elementos do component*/
     filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, .8));
 }
-
