@@ -34,5 +34,16 @@ section {
     margin: 0;
 }
 
+.cores:nth-last-of-type(2) {
+    background-color: rred;
+
+    /*define qual elemento o background color vai se limitar*/
+    background-clip: content-box;
+}
+
+.cores:nth-last-of-type(3) {
+    background-color:hsl(50deg, 100%, 50%);
+}
+
 
 
