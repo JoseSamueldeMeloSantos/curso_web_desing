@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Media Type</title>
+
+        <!--
+            media no link -> faz o mesmo que o @media,porém no html
+            
+            obs: para o style não sobrepor,coloque ele no fim do head
+        -->
+        <link rel="stylesheet" href="type_media_print.css" media="print">
+
+        <style>
+            /*
+                por padrão todo os elementos de um css é envolto em um
+                (a não ser q vc mude)
+
+                @media all {
+                
+                }
+            */
+            body {
+                color: chocolate;
+                font-family: sans-serif;
+            }
+
+            
+            /* @media -> define um estilo de css para um certo tipo de media
+            @media print { print -> define para impresão da página
+                body {
+                    color: black;
+                    font-family: serif;
+                }
+            }
+            */
+        </style>
+
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h1>Media Types</h1>
+
+        <a href="http://google.com">google</a>
+    </body>
+</html>
