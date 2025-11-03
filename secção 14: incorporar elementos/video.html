@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        /*personaliza a legenda do video*/
+        ::cue {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    
+    <!--apenas o um video e sem legenda-->
+    <video src="media/video.mp4" type="video/mp4" controls muted loop></video>
+
+    <!--varios videos e legenda-->
+    <video controls autoplay muted loop>
+        <source src="media/video.mp4" type="video/mp4">
+        <source src="media/video.ogv" type="video/ogv">
+        <source src="media/video.webm" type="video/webm">
+        <!--
+            track -> para adicionar legendas, traduções, descrições ou capítulos.
+
+            kind→ Define o tipo da faixa de texto.(Existem vários tipos possíveis):
+
+                subtitles – legendas traduzidas (para quem entende o áudio, mas precisa de outro idioma);
+
+                captions – legendas completas (para quem não ouve o áudio, inclui sons, ruídos e falas);
+
+                descriptions – descrição em áudio do que aparece na tela;
+
+                chapters – capítulos de navegação no vídeo;
+
+                metadata – informações que podem ser processadas por scripts, não mostradas ao usuário.
+
+            srclang="pt"
+            → Define o idioma da faixa. Aqui está em português (pt).
+
+            label="portugues"
+            → O nome que aparecerá para o usuário escolher a legenda no player do vídeo.
+        -->
+        <track src="media/track.pt.vtt" kind="captions" srclang="pt" label="portugues"></track>
+        <p>menssagem para erro(nenhum video foi suportado)</p>
+    </video>
+</body>
+</html>
